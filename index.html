@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Space Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Interactive Space Explorer</h1>
+        
+        <button id="modalBtn" class="btn">Open Galaxy Viewer</button>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Galaxy Viewer</h2>
+                <p>Explore the wonders of the universe!</p>
+                <button id="closeModal" class="btn">Close</button>
+            </div>
+        </div>
+        
+        <div class="planet-container">
+            <div id="planet" class="planet"></div>
+            <button id="rotatePlanet" class="btn">Rotate Planet</button>
+        </div>
+        
+        <div class="calculator">
+            <h2>Space Distance Calculator</h2>
+            <input type="number" id="x1" placeholder="Enter X1">
+            <input type="number" id="y1" placeholder="Enter Y1">
+            <input type="number" id="x2" placeholder="Enter X2">
+            <input type="number" id="y2" placeholder="Enter Y2">
+            <button id="calculateBtn" class="btn">Calculate Distance</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
